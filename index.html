@@ -77,15 +77,7 @@
 
 <body class="home page-template page-template-page-builder page-template-page-builder-php page page-id-16 wpb-js-composer js-comp-ver-6.0.5 vc_responsive" style="overflow: hidden">
 
-<div class="loader-wrapper">
-      <span class="loader"><span class="loader-inner"></span></span>
-    </div>
 
-    <script>
-        $(window).on("load",function(){
-          $(".loader-wrapper").fadeOut("slow");
-        });
-		</script>
 		
 	<div id="main">
 		
@@ -564,7 +556,15 @@ go there to check out cool stuff.</span></span>
 		<script type='text/javascript' defer src='dist/frontend.bundle0e62.js?ver=1.0.1.0'></script>
 	</div>
 	 
-	
+	<div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+	</script>
 	
     
 </body>
