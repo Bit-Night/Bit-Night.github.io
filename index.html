@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile">
 	<link rel="pingback" href="index.html">
+	<script src="dist/jquery-2.1.4.js"></script>
+	<link rel="stylesheet" type="text/css" href="dist/loader-css.css"/>
 	
 	<link rel="icon" type="image/png" sizes="32x32" href="dist/public/images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="dist/public/images/favicon-16x16.png">
@@ -74,6 +76,17 @@
 </head>
 
 <body class="home page-template page-template-page-builder page-template-page-builder-php page page-id-16 wpb-js-composer js-comp-ver-6.0.5 vc_responsive" style="overflow: hidden">
+
+<div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+		</script>
+		
 	<div id="main">
 		
 		<header id="header__site">
@@ -550,6 +563,10 @@ go there to check out cool stuff.</span></span>
 		</script>
 		<script type='text/javascript' defer src='dist/frontend.bundle0e62.js?ver=1.0.1.0'></script>
 	</div>
+	 
+	
+	
+    
 </body>
 
 </html>
