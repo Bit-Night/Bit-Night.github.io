@@ -170,6 +170,11 @@ html {
 }
 
 body {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	-o-user-select: none;
+	user-select: none;
 	font-family: 'futura_r', 'Helvetica Neue', 'Helvetica', 'Arial', 'Avenir', 'Hiragino Sans', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 	font-size: 1.6rem;
 	-webkit-text-size-adjust: 100%;
@@ -280,7 +285,7 @@ img {
   box-shadow: 0 0 20px #2696E8,
               0 0 60px #2696E8,
               0 0 100px #2696E8;
-  animation: colors 5s infinite;
+  animation: colors 2s infinite;
   transform: translate(-50%, -50%);
   display: none;
 }
@@ -507,6 +512,7 @@ img {
 	-o-transition: .3s;
 	transition: .3s;
 	letter-spacing: 0.1em
+	
 }
 
 @media screen and (max-width:800px) {
@@ -525,7 +531,8 @@ img {
 .btn:hover {
 	-webkit-transform: translate3d(0, -5%, 0);
 	transform: translate3d(0, -5%, 0);
-	opacity: 1
+	opacity: 1;
+	cursor: url("../img/hand.svg"), auto
 }
 
 .btn-wrap {
@@ -819,22 +826,22 @@ img {
 }
 
 .page-top .image__work {
-	background: url(../img/work.jpg) no-repeat center;
+	background: url(../img/work.webp) no-repeat center;
 	background-size: cover
 }
 
 .page-top .image__test1 {
-	background: url(../img/test1.jpg) no-repeat center;
+	background: url(../img/test1.webp) no-repeat center;
 	background-size: cover
 }
 
 .page-top .image__test2 {
-	background: url(../img/test2.jpg) no-repeat center;
+	background: url(../img/test2.webp) no-repeat center;
 	background-size: cover
 }
 
 .page-top .image__about {
-	background: url(../img/about.jpg) no-repeat center;
+	background: url(../img/about.webp) no-repeat center;
 	background-size: cover
 }
 
@@ -1016,7 +1023,8 @@ header .name {
 	font-size: 2.4rem;
 	letter-spacing: 0.1em;
 	position: relative;
-	z-index: 1000
+	z-index: 1000;
+	cursor: url("../img/heart.svg"), auto
 }
 
 @media screen and (max-width:420px) {
@@ -1049,7 +1057,8 @@ header .icons a {
 	display: block;
 	margin-right: 3.2rem;
 	font-size: 2.4rem;
-	letter-spacing: 0.1em
+	letter-spacing: 0.1em;
+	cursor: url("../img/heart.svg"), auto
 }
 
 header .icons a:last-child {
@@ -1060,7 +1069,7 @@ header .menuIcon {
 	position: relative;
 	width: 50px;
 	height: 22px;
-	cursor: pointer
+	cursor: url("../img/eye.svg"), auto
 }
 
 @media screen and (max-width:420px) {
@@ -1545,7 +1554,8 @@ header .global-nav__sns a:last-child {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	position: relative
+	position: relative;
+	cursor: url("../img/hand.svg"), auto
 }
 
 .image__cover {
@@ -1556,7 +1566,7 @@ header .global-nav__sns a:last-child {
 	right: 0;
 	background: #ff4d5a;
 	-webkit-transform: translate3d(100%, 0, 0);
-	transform: translate3d(100%, 0, 0)
+	transform: translate3d(100%, 0, 0);
 }
 
 .image__cover:last-child {
@@ -1564,17 +1574,17 @@ header .global-nav__sns a:last-child {
 }
 
 .image--works {
-	background: url(../img/work.jpg) no-repeat center;
+	background: url(../img/work.webp) no-repeat center;
 	background-size: cover
 }
 
 .image--about {
-	background: url(../img/about.jpg) no-repeat center;
+	background: url(../img/about.webp) no-repeat center;
 	background-size: cover
 }
 
 .image--contact {
-	background: url(../img/contact.jpg) no-repeat center;
+	background: url(../img/contact.webp) no-repeat center;
 	background-size: cover
 }
 
@@ -2339,7 +2349,8 @@ header .global-nav__sns a:last-child {
 }
 
 .footer a:hover {
-	opacity: 0.5
+	opacity: 0.5;
+	cursor: url("../img/heart.svg"), auto
 }
 
 @-webkit-keyframes ratio90 {
