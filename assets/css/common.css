@@ -162,6 +162,8 @@ html {
 	}
 }
 
+
+
 *,
 :after,
 :before {
@@ -170,23 +172,33 @@ html {
 }
 
 body {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	-o-user-select: none;
+	user-select: none;
 	font-family: 'futura_r', 'Helvetica Neue', 'Helvetica', 'Arial', 'Avenir', 'Hiragino Sans', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-	font-size: 1.6rem;
+	font-size: 2.3rem;
 	-webkit-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	text-size-adjust: 100%;
-	color: #828c96;
+	color: #800000;
+	text-align: justify;
 	overflow-x: hidden;
+	
 	height: 100vh;
 	cursor: none
 }
 
 @media screen and (max-width:420px) {
 	body {
-		font-size: 1.5rem
+		font-size: 1.4rem;
+		text-align: justify;
 	}
 }
+
+
 
 textarea {
 	font-family: 'futura_r', 'Helvetica Neue', 'Helvetica', 'Arial', 'Avenir', 'Hiragino Sans', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif
@@ -507,6 +519,7 @@ img {
 	-o-transition: .3s;
 	transition: .3s;
 	letter-spacing: 0.1em
+	
 }
 
 @media screen and (max-width:800px) {
@@ -525,7 +538,8 @@ img {
 .btn:hover {
 	-webkit-transform: translate3d(0, -5%, 0);
 	transform: translate3d(0, -5%, 0);
-	opacity: 1
+	opacity: 1;
+	cursor: url("../img/hand.svg"), auto
 }
 
 .btn-wrap {
@@ -630,13 +644,16 @@ img {
 
 @media screen and (max-width:420px) {
 	.heading--left {
+		font-size: 2.4rem;
+		padding-top: 4.2rem;
 		margin-left: auto
 	}
 }
 
 @media screen and (max-width:800px) {
 	.heading {
-		padding-top: 0;
+		font-size: 2.4rem;
+		padding-top: 4.2rem;
 		margin-right: 0
 	}
 }
@@ -644,7 +661,7 @@ img {
 @media screen and (max-width:420px) {
 	.heading {
 		font-size: 2.4rem;
-		padding-top: 0.2rem
+		padding-top: 4.2rem
 	}
 }
 
@@ -722,14 +739,14 @@ img {
 }
 
 .wrapper {
-	margin-bottom: 20rem;
+	margin-bottom: 3.0rem;
 	position: relative;
 	z-index: 200
 }
 
 @media screen and (max-width:420px) {
 	.wrapper {
-		margin-bottom: 12rem
+		margin-bottom: 3.0rem
 	}
 }
 
@@ -819,22 +836,22 @@ img {
 }
 
 .page-top .image__work {
-	background: url(../img/work.jpg) no-repeat center;
+	background: url(../img/work.webp) no-repeat center;
 	background-size: cover
 }
 
 .page-top .image__test1 {
-	background: url(../img/test1.jpg) no-repeat center;
+	background: url(../img/test1.webp) no-repeat center;
 	background-size: cover
 }
 
 .page-top .image__test2 {
-	background: url(../img/test2.jpg) no-repeat center;
+	background: url(../img/test2.webp) no-repeat center;
 	background-size: cover
 }
 
 .page-top .image__about {
-	background: url(../img/about.jpg) no-repeat center;
+	background: url(../img/about.webp) no-repeat center;
 	background-size: cover
 }
 
@@ -919,6 +936,7 @@ img {
 }
 
 .text__works {
+	margin-top: 7.2rem;
 	width: 65.5%
 }
 
@@ -936,12 +954,18 @@ img {
 }
 
 .container {
-	margin-top: 20rem
+	margin-top: 20rem;
+}
+.container1 {
+	margin-top: 1rem
 }
 
 @media screen and (max-width:420px) {
 	.container {
 		margin-top: 12rem
+	}
+	.container1 {
+		margin-top: 1rem
 	}
 }
 
@@ -1016,7 +1040,7 @@ header .name {
 	font-size: 2.4rem;
 	letter-spacing: 0.1em;
 	position: relative;
-	z-index: 1000
+	z-index: 1000;
 }
 
 @media screen and (max-width:420px) {
@@ -1049,7 +1073,8 @@ header .icons a {
 	display: block;
 	margin-right: 3.2rem;
 	font-size: 2.4rem;
-	letter-spacing: 0.1em
+	letter-spacing: 0.1em;
+	cursor: url("../img/heart.svg"), auto
 }
 
 header .icons a:last-child {
@@ -1060,7 +1085,6 @@ header .menuIcon {
 	position: relative;
 	width: 50px;
 	height: 22px;
-	cursor: pointer
 }
 
 @media screen and (max-width:420px) {
@@ -1545,7 +1569,8 @@ header .global-nav__sns a:last-child {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	position: relative
+	position: relative;
+	cursor: url("../img/hand.svg"), auto
 }
 
 .image__cover {
@@ -1556,7 +1581,7 @@ header .global-nav__sns a:last-child {
 	right: 0;
 	background: #ff4d5a;
 	-webkit-transform: translate3d(100%, 0, 0);
-	transform: translate3d(100%, 0, 0)
+	transform: translate3d(100%, 0, 0);
 }
 
 .image__cover:last-child {
@@ -1564,17 +1589,17 @@ header .global-nav__sns a:last-child {
 }
 
 .image--works {
-	background: url(../img/work.jpg) no-repeat center;
+	background: url(../img/work.webp) no-repeat center;
 	background-size: cover
 }
 
 .image--about {
-	background: url(../img/about.jpg) no-repeat center;
+	background: url(../img/about.webp) no-repeat center;
 	background-size: cover
 }
 
 .image--contact {
-	background: url(../img/contact.jpg) no-repeat center;
+	background: url(../img/contact.webp) no-repeat center;
 	background-size: cover
 }
 
@@ -1734,23 +1759,24 @@ header .global-nav__sns a:last-child {
 
 .meta__back {
 	width: 100%;
-	height: 70rem;
+	height: 20rem;
 	background: #f2f4f5;
 	position: absolute;
 	top: 0;
 	left: 0;
+	padding-bottom: 7.2rem;
 	z-index: -100
 }
 
 @media screen and (max-width:800px) {
 	.meta__back {
-		height: 54rem
+		height: 20rem
 	}
 }
 
 @media screen and (max-width:420px) {
 	.meta__back {
-		height: 45rem
+		height: 30rem
 	}
 }
 
@@ -1970,29 +1996,18 @@ header .global-nav__sns a:last-child {
 	}
 }
 
-.who__jp {
+.who__en {
 	font-size: 2.4rem;
 	letter-spacing: 0.3em;
-	font-weight: bold;
-	margin-bottom: 0.4rem
-}
-
-@media screen and (max-width:420px) {
-	.who__jp {
-		font-size: 1.3rem
-	}
-}
-
-.who__en {
-	font-size: 1.8rem;
-	letter-spacing: 0.2em;
 	font-family: "futura_de";
+	font-weight: bold;
+	margin-bottom: 0.4rem;
 	line-height: 1.3
 }
 
 @media screen and (max-width:420px) {
 	.who__en {
-		font-size: 1rem
+		font-size: 1.3rem
 	}
 }
 
@@ -2167,15 +2182,16 @@ header .global-nav__sns a:last-child {
 }
 
 .skill-set__year {
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	line-height: 1.2;
-	color: #c0c5ca;
-	margin-left: 0.8rem;
+	color: #800000;
+	margin-left: 1.8rem;
 	letter-spacing: 0.2em
 }
 
 @media screen and (max-width:420px) {
 	.skill-set__year {
+		color: #800000;
 		font-size: 1rem
 	}
 }
@@ -2339,7 +2355,8 @@ header .global-nav__sns a:last-child {
 }
 
 .footer a:hover {
-	opacity: 0.5
+	opacity: 0.5;
+	cursor: url("../img/heart.svg"), auto
 }
 
 @-webkit-keyframes ratio90 {
@@ -2449,3 +2466,271 @@ header .global-nav__sns a:last-child {
 		width: 40%
 	}
 }
+
+/* Cards */
+.postcard {
+	flex-wrap: wrap;
+	display: flex;
+	background-color: #18151f;
+	box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+	border-radius: 10px;
+	margin: 0 0 2rem 0;
+	overflow: hidden;
+	position: relative;
+	color: #ffffff;
+  }
+  .postcard a {
+	color: inherit;
+  }
+  .postcard h1, .postcard .h1 {
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+  }
+  .postcard .small {
+	font-size: 80%;
+  }
+  .postcard .postcard__title {
+	font-size: 1.75rem;
+  }
+  .postcard .postcard__img {
+	max-height: 180px;
+	width: 100%;
+	object-fit: cover;
+	position: relative;
+  }
+  .postcard .postcard__img_link {
+	display: contents;
+  }
+  .postcard .postcard__bar {
+	width: 50px;
+	height: 10px;
+	margin: 10px 0;
+	border-radius: 5px;
+	background-color: #424242;
+	transition: width 0.2s ease;
+  }
+  .postcard .postcard__text {
+	padding: 2.5rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+  }
+  .postcard .postcard__preview-txt {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: justify;
+	height: 100%;
+  }
+  .postcard .postcard__tagbox {
+	display: flex;
+	flex-flow: row wrap;
+	font-size: 14px;
+	margin: 20px 0 0 0;
+	padding: 0;
+	justify-content: center;
+  }
+  .postcard .postcard__tagbox .tag__item {
+	display: inline-block;
+	background: rgba(83, 83, 83, 0.4);
+	border-radius: 3px;
+	padding: 2.5px 10px;
+	margin: 0 5px 5px 0;
+	cursor: default;
+	user-select: none;
+	transition: background-color 0.3s;
+  }
+  .postcard .postcard__tagbox .tag__item:hover {
+	background: rgba(83, 83, 83, 0.8);
+  }
+  .postcard:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(-70deg, #424242, transparent 50%);
+	opacity: 1;
+	border-radius: 10px;
+  }
+  .postcard:hover .postcard__bar {
+	width: 100px
+  }
+  
+  @media screen and (min-width: 769px) {
+	.postcard {
+	  flex-wrap: inherit;
+	}
+	.postcard .postcard__title {
+	  font-size: 2rem;
+	}
+	.postcard .postcard__tagbox {
+	  justify-content: start;
+	}
+	.postcard .postcard__img {
+	  max-width: 300px;
+	  max-height: 100%;
+	  transition: transform 0.3s ease;
+	}
+	.postcard .postcard__text {
+	  padding: 2rem;
+	  width: 100%;
+	}
+	.postcard .media.postcard__text:before {
+	  content: "";
+	  position: absolute;
+	  display: block;
+	  background: #18151f;
+	  top: -20%;
+	  height: 130%;
+	  width: 55px;
+	}
+	.postcard:hover .postcard__img {
+	  transform: scale(1.1);
+	}
+	.postcard:nth-child(2n+1) {
+	  flex-direction: row;
+	}
+	.postcard:nth-child(2n+0) {
+	  flex-direction: row-reverse;
+	}
+	.postcard:nth-child(2n+1) .postcard__text::before {
+	  left: -12px !important;
+	  transform: rotate(4deg);
+	}
+	.postcard:nth-child(2n+0) .postcard__text::before {
+	  right: -12px !important;
+	  transform: rotate(-4deg);
+	}
+  }
+  @media screen and (min-width: 1024px) {
+	.postcard .postcard__text {
+	  padding: 2rem 3.5rem;
+	}
+	.postcard .postcard__text:before {
+	  content: "";
+	  position: absolute;
+	  display: block;
+	  background: #18151f;
+	  top: -20%;
+	  height: 130%;
+	  width: 55px;
+	}
+  }
+  /* COLORS */
+  .postcard .postcard__tagbox .green.play:hover {
+	background: #79dd09;
+	color: black;
+  }
+  
+  .green .postcard__title:hover {
+	color: #79dd09;
+  }
+  
+  .green .postcard__bar {
+	background-color: #79dd09;
+  }
+  
+  .green::before {
+	background-image: linear-gradient(-30deg, rgba(121, 221, 9, 0.1), transparent 50%);
+  }
+  
+  .green:nth-child(2n)::before {
+	background-image: linear-gradient(30deg, rgba(121, 221, 9, 0.1), transparent 50%);
+  }
+  
+  .postcard .postcard__tagbox .blue.play:hover {
+	background: #0076bd;
+  }
+  
+  .blue .postcard__title:hover {
+	color: #0076bd;
+  }
+  
+  .blue .postcard__bar {
+	background-color: #0076bd;
+  }
+  
+  .blue::before {
+	background-image: linear-gradient(-30deg, rgba(0, 118, 189, 0.1), transparent 50%);
+  }
+  
+  .blue:nth-child(2n)::before {
+	background-image: linear-gradient(30deg, rgba(0, 118, 189, 0.1), transparent 50%);
+  }
+  
+  .postcard .postcard__tagbox .red.play:hover {
+	background: #bd150b;
+  }
+  
+  .red .postcard__title:hover {
+	color: #bd150b;
+  }
+  
+  .red .postcard__bar {
+	background-color: #bd150b;
+  }
+  
+  .red::before {
+	background-image: linear-gradient(-30deg, rgba(189, 21, 11, 0.1), transparent 50%);
+  }
+  
+  .red:nth-child(2n)::before {
+	background-image: linear-gradient(30deg, rgba(189, 21, 11, 0.1), transparent 50%);
+  }
+  
+  .postcard .postcard__tagbox .yellow.play:hover {
+	background: #bdbb49;
+	color: black;
+  }
+  
+  .yellow .postcard__title:hover {
+	color: #bdbb49;
+  }
+  
+  .yellow .postcard__bar {
+	background-color: #bdbb49;
+  }
+  
+  .yellow::before {
+	background-image: linear-gradient(-30deg, rgba(189, 187, 73, 0.1), transparent 50%);
+  }
+  
+  .yellow:nth-child(2n)::before {
+	background-image: linear-gradient(30deg, rgba(189, 187, 73, 0.1), transparent 50%);
+  }
+  
+  @media screen and (min-width: 769px) {
+	.green::before {
+	  background-image: linear-gradient(-80deg, rgba(121, 221, 9, 0.1), transparent 50%);
+	}
+  
+	.green:nth-child(2n)::before {
+	  background-image: linear-gradient(80deg, rgba(121, 221, 9, 0.1), transparent 50%);
+	}
+  
+	.blue::before {
+	  background-image: linear-gradient(-80deg, rgba(0, 118, 189, 0.1), transparent 50%);
+	}
+  
+	.blue:nth-child(2n)::before {
+	  background-image: linear-gradient(80deg, rgba(0, 118, 189, 0.1), transparent 50%);
+	}
+  
+	.red::before {
+	  background-image: linear-gradient(-80deg, rgba(189, 21, 11, 0.1), transparent 50%);
+	}
+  
+	.red:nth-child(2n)::before {
+	  background-image: linear-gradient(80deg, rgba(189, 21, 11, 0.1), transparent 50%);
+	}
+  
+	.yellow::before {
+	  background-image: linear-gradient(-80deg, rgba(189, 187, 73, 0.1), transparent 50%);
+	}
+  
+	.yellow:nth-child(2n)::before {
+	  background-image: linear-gradient(80deg, rgba(189, 187, 73, 0.1), transparent 50%);
+	}
+  }

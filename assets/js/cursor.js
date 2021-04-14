@@ -11,12 +11,13 @@ const cursor = document.querySelector(".cursor");
       cursor.style.display = "block";
 
       //cursor effects when mouse stopped
-      function mouseStopped(){
-        cursor.style.display = "none";
-      }
-      clearTimeout(timeout);
-      timeout = setTimeout(mouseStopped, 1000);
-    });
+     // function mouseStopped(){
+     //   cursor.style.display = "none";
+     // }
+     // clearTimeout(timeout);
+      //timeout = setTimeout(mouseStopped, 1000);
+	
+	});
 
     //cursor effects when mouseout
     document.addEventListener("mouseout", () => {
