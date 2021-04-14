@@ -23,12 +23,20 @@
     <link rel="apple-touch-icon" href="favicon.svg">
 
     <title>Pandu Konala - Security Researcher. Developer & Much More.</title>
+
+    <script>
+      window.onload = function() {
+        var context = new AudioContext();
+      }
+    </script>
   
   </head>
   
   
   <body>
-
+    <audio autoplay loop id="myaudio">
+      <source src="assets/music/sprit_small.mp3" type="audio/mp3">
+    </audio>
   <div class="cursor"></div>
 
     <header>
@@ -187,9 +195,8 @@
     <script src="assets/js/common.min.js"></script>
 	  <script src="assets/js/cursor.js"></script>
 	  <script src="assets/js/disable.js"></script>
-    <audio autoplay loop preload="auto" id="myaudio">
-    <source src="assets/music/sprit_small.mp3" type="audio/mp3">
-    </audio>
+
+
 
   </body>
 
