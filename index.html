@@ -2,12 +2,7 @@
 <html lang="en-US">
 
 <head>
-  <script>
 
-    var audio = new Audio("assets/music/kagome_inuyasha.mp3");
-    audio.play();
-    
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -52,8 +47,8 @@
       <nav class="global-nav">
         <ul class="global-nav__list">
           <li><a href="index.html">HOME</a></li>
-          <li><a href="writing.html">MY WORK</a></li>
-          <li><a href="about.html">ABOUT ME</a></li>
+          <li><a href="writing.html">BLOG</a></li>
+          <li><a href="about.html">ABOUT</a></li>
           <li><a class="js-contact" href="index.html#contact">CONTACT</a></li>
           <li class="global-nav__sns"><a href="https://bit-night.github.io" target="_blank"><i class="fab fa-github"></i></a><a href="https://bit-night.github.io" target="_blank"><i class="fab fa-instagram"></i></a></li>
         </ul>
@@ -145,9 +140,11 @@
                 <h2 class="title__text js-letter">Contact</h2>
                 <div class="border js-letter"><span></span><span class="js-letter"></span></div>
                 <ul>
-				  <li class="js-letter"><a> Have a great idea to collaborate?</p>
-				  <li class="js-letter"><a> Or want to have a cup Of coffee & chit-chat?</p>
-				  <li class="js-letter"><a> Just drop me a message or an E-Mail.</p>
+
+                  <p class="title__lead js-letter">Have a great idea to collaborate?</p>
+                  <p class="title__lead js-letter">Or want to have a cup Of coffee & chit-chat?</p>
+                  <p class="title__lead js-letter">Just drop me a message or an E-Mail.</p>        
+            <br>
                   <li class="js-letter"><a href="mailto:p.konala@lancaster.ac.uk">Email:p.konala@lancaster.ac.uk</a></li>
                   <li class="js-letter"><a href="https://bit-night.github.io" target="_blank"><i class="fab fa-github"></i></a><a href="https://bit-night.github.io" target="_blank"><i class="fab fa-instagram"></i></a></li>				  
                 </ul>
@@ -196,19 +193,6 @@
     <script src="assets/js/common.min.js"></script>
 	  <script src="assets/js/cursor.js"></script>
 	  <script src="assets/js/disable.js"></script>
-    <script src="assets/js/audio.min.js"></script>
-    <script src="assets/js/audio.min.js"></script>
-    <script>
-      // Later on, after some condition has been met, set video source to the
-      // preloaded video URL.
-      soundManager.defaultOptions = {
-  stream: false
-}
-      audio.src = 'https://cdn.com/small-file.mp4';
-      audio.play().then(() => {
-        // If preloaded video URL was already cached, playback started immediately.
-      });
-    </script>
 
 
 
