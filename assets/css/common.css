@@ -152,8 +152,8 @@ table {
 html {
 	font-size: 62.5%;
 	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	overflow-x: hidden
+	box-sizing: border-box;	
+	overflow-x: hidden;
 }
 
 @media screen and (max-width:420px) {
@@ -197,8 +197,6 @@ body {
 		text-align: justify;
 	}
 }
-
-
 
 textarea {
 	font-family: 'futura_r', 'Helvetica Neue', 'Helvetica', 'Arial', 'Avenir', 'Hiragino Sans', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif
@@ -835,23 +833,8 @@ img {
 	}
 }
 
-.page-top .image__work {
-	background: url(../img/work.webp) no-repeat center;
-	background-size: cover
-}
-
-.page-top .image__test1 {
-	background: url(../img/test1.webp) no-repeat center;
-	background-size: cover
-}
-
-.page-top .image__test2 {
-	background: url(../img/test2.webp) no-repeat center;
-	background-size: cover
-}
-
-.page-top .image__about {
-	background: url(../img/about.webp) no-repeat center;
+.page-top .image__all {
+	background: no-repeat center;
 	background-size: cover
 }
 
@@ -989,6 +972,8 @@ img {
 	top: 0;
 	left: 0
 }
+
+
 
 .loader.js-hidden {
 	display: none
@@ -2034,6 +2019,7 @@ header .global-nav__sns a:last-child {
 	}
 }
 
+
 .passion__list {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -2328,6 +2314,21 @@ header .global-nav__sns a:last-child {
 	}
 }
 
+.footer div {
+	width: 10%;
+	display:block;
+    margin:auto;
+	
+}
+@media screen and (max-width:420px) {
+	.footer div {
+		width: 20%;
+		display:block;
+		margin:auto;
+	}
+}
+
+
 .footer a {
 	display: block;
 	font-size: 2.8rem;
@@ -2474,7 +2475,7 @@ header .global-nav__sns a:last-child {
 	display: flex;
 	background-color: #18151f;
 	box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
-	border-radius: 100px;
+	border-radius: 110px;
 	margin: 4rem 0.5rem 0.5rem 0.5rem;
 	overflow: hidden;
 	position: relative;
