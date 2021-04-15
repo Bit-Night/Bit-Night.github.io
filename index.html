@@ -22,7 +22,7 @@
 
     
 
-
+    <link rel="preload" as="audio" href="assets/music/kagome_inuyasha.mp3">
     <link rel="stylesheet" href="assets/css/jquery.fullPage.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/font-awesome-all.css">
@@ -37,8 +37,9 @@
   
   
   <body oncontextmenu="return false;">
-
-  <div class="cursor"></div>
+  <audio autoplay loop id="audio"></audio>
+  
+    <div class="cursor"></div>
 
     <header>
 	  <a class="name"></a>
@@ -197,7 +198,17 @@
 	  <script src="assets/js/disable.js"></script>
     <script src="assets/js/audio.min.js"></script>
     <script src="assets/js/audio.min.js"></script>
-    
+    <script>
+      // Later on, after some condition has been met, set video source to the
+      // preloaded video URL.
+      soundManager.defaultOptions = {
+  stream: false
+}
+      audio.src = 'https://cdn.com/small-file.mp4';
+      audio.play().then(() => {
+        // If preloaded video URL was already cached, playback started immediately.
+      });
+    </script>
 
 
 
