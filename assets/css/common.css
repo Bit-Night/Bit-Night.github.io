@@ -198,6 +198,10 @@ body {
 	}
 }
 
+::-webkit-scrollbar {
+	width: 0;
+  }
+  
 textarea {
 	font-family: 'futura_r', 'Helvetica Neue', 'Helvetica', 'Arial', 'Avenir', 'Hiragino Sans', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif
 }
