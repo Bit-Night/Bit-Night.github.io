@@ -13,7 +13,10 @@
 	<meta property="og:description" content="My Digital World, Where I Share Thinking Life & Innovation." />
 	<meta property="og:url" content="https://bit-night.github.io" />
 	<meta property="og:site_name" content="Pandu Konala - Security Researcher. Developer & Much More." />
-	
+
+    
+
+
     <link rel="stylesheet" href="assets/css/jquery.fullPage.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/font-awesome-all.css">
@@ -28,6 +31,7 @@
   
   
   <body oncontextmenu="return false;">
+
   <div class="cursor"></div>
 
     <header>
@@ -176,7 +180,7 @@
       </div>
     </main>
 
-    <script src="assets/js/audio.min.js"></script>
+    
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.fullPage.js"></script>
     <script src="assets/js/anime.min.js"></script>
@@ -186,14 +190,14 @@
 	  <script src="assets/js/cursor.js"></script>
 	  <script src="assets/js/disable.js"></script>
     <script src="assets/js/audio.min.js"></script>
-    <script>
-      audiojs.events.ready(function() {
-        var as = audiojs.createAll();
-      });
-    </script>
-    <audio src="assets/music/kagome_inuyasha.mp3" autoplay="autoplay" loop="loop" />
+    <script src="assets/js/audio.min.js"></script>
     
+  <script>
 
+    var audio = new Audio("assets/music/kagome_inuyasha.mp3");
+    audio.play();
+    
+  </script>
 
 
   </body>
