@@ -511,8 +511,8 @@ img {
 .btn {
 	display: inline-block;
 	font-size: 1.8rem;
-	color: #fff;
-	background: #ff4d5a;
+	color: rgb(0, 0, 0);
+	background: rgb(255, 251, 251);
 	line-height: 1;
 	font-weight: bold;
 	padding: 18px 32px;
@@ -520,8 +520,8 @@ img {
 	-webkit-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s;
-	letter-spacing: 0.1em
-	
+	animation: text-flicker 1s linear infinite;
+	letter-spacing: 0.1em	
 }
 
 @media screen and (max-width:800px) {
@@ -533,16 +533,77 @@ img {
 
 @media screen and (max-width:420px) {
 	.btn {
+		animation: text-flicker 1s linear infinite;
 		font-size: 1.2rem
 	}
 }
 
 .btn:hover {
-	-webkit-transform: translate3d(0, -5%, 0);
-	transform: translate3d(0, -5%, 0);
-	opacity: 1;
+	animation: text-flicker 2s linear forwards;
 	cursor: url("../img/hand.svg"), auto
 }
+@keyframes text-flicker {
+	2% { 
+	  color: rgb(230, 0, 120);
+	  text-shadow: 0 0 15px rgb(230, 0, 120);
+	}
+	3% {
+	  color: rgba(120, 0, 50, .5);
+	  text-shadow: none;
+	}
+	6% {
+	  color: rgb(230, 0, 120);
+	  text-shadow: 0 0 15px rgb(230, 0, 120);
+	}
+	9% {
+	  color: rgba(120, 0, 50, .5);
+	  text-shadow: none;
+	}
+	11% {
+	  color: rgb(230, 0, 120);
+	  text-shadow: 0 0 15px rgb(230, 0, 120);
+	}
+	14% {
+	  color: rgba(120, 0, 50, .5);
+	  text-shadow: none;
+	}
+	18% {
+	  color: rgb(230, 0, 120);
+	  text-shadow: 0 0 15px rgb(230, 0, 120);
+	}
+	32% {
+	  color: rgb(230, 0, 120);
+	  text-shadow: 0 0 15px rgb(230, 0, 120);
+	}
+	33% {
+	  color: rgba(120, 0, 50, .5);
+	  text-shadow: none;
+	}
+	37% {
+	  color: rgb(230, 0, 120);
+	  text-shadow: 0 0 15px rgb(230, 0, 120);
+	}
+	39% {
+	  color: rgba(120, 0, 50, .5);
+	  text-shadow: none;
+	}
+	43% {
+	  color: rgb(230, 0, 120);
+	  text-shadow: 0 0 15px rgb(230, 0, 120);
+	}
+	46% {
+	  color: rgba(120, 0, 50, .5);
+	  text-shadow: none;
+	}
+	47% {
+	  color: rgb(230, 0, 120);
+	  text-shadow: 0 0 15px rgb(230, 0, 120);
+	}
+	100% {
+	  color: rgb(230, 0, 120);
+	  text-shadow: 0 0 15px rgb(230, 0, 120);
+	}
+  }
 
 .btn-wrap {
 	margin-top: 3.2rem
@@ -985,7 +1046,7 @@ img {
 
 
 header {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
