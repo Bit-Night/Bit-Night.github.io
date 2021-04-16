@@ -346,6 +346,7 @@ img {
 .title__text {
 	font-size: 12rem;
 	line-height: 1;
+	color: 	#fffdd0;
 	letter-spacing: 0.1em;
 	margin-bottom: 1.6rem;
 	font-family: "futura_m";
@@ -434,7 +435,7 @@ img {
 }
 
 .title__lead {
-	color: #fff;
+	color: #fffdd0;
 	font-size: 2.8rem;
 	line-height: 1.5;
 	letter-spacing: 0.1em
@@ -513,7 +514,7 @@ img {
 	display: inline-block;
 	font-size: 1.8rem;
 	color: rgb(230, 0, 120);
-	background: rgb(255, 251, 251);
+	background: rgb(255, 253, 208);
 	line-height: 1;
 	font-weight: bold;
 	padding: 18px 32px;
@@ -1173,7 +1174,7 @@ header.js-color a {
 
 header.js-color .menuIcon:after,
 header.js-color .menuIcon:before {
-	background: #020b16
+	background: #020b16;
 }
 
 header a {
