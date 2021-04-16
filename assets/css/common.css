@@ -346,7 +346,7 @@ img {
 .title__text {
 	font-size: 12rem;
 	line-height: 1;
-	color: 	#fffdd0;
+	color: 	#ffffff;
 	letter-spacing: 0.1em;
 	margin-bottom: 1.6rem;
 	font-family: "futura_m";
@@ -435,7 +435,7 @@ img {
 }
 
 .title__lead {
-	color: #fffdd0;
+	color: #ffffff;
 	font-size: 2.8rem;
 	line-height: 1.5;
 	letter-spacing: 0.1em
@@ -514,7 +514,7 @@ img {
 	display: inline-block;
 	font-size: 1.8rem;
 	color: rgb(230, 0, 120);
-	background: rgb(255, 253, 208);
+	background: rgb(255, 255, 255);
 	line-height: 1;
 	font-weight: bold;
 	padding: 18px 32px;
@@ -733,7 +733,7 @@ img {
 	-webkit-writing-mode: vertical-rl;
 	-ms-writing-mode: tb-rl;
 	writing-mode: vertical-rl;
-	color: rgb(255, 253, 208);
+	color: rgb(255, 255, 255);
 	z-index: 100
 }
 
@@ -741,7 +741,7 @@ img {
 	content: "";
 	width: 2px;
 	height: 64px;
-	background: rgb(255, 253, 208);
+	background: rgb(255, 255, 255);
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -924,7 +924,7 @@ img {
 	-o-transition: .5s;
 	transition: .5s;
 	overflow: hidden;
-	color: rgb(255, 253, 208);
+	color: rgb(255, 255, 255);
 	z-index: 300
 }
 
@@ -1531,7 +1531,7 @@ header .global-nav__sns a:last-child {
 #fp-nav ul li a {
 	width: 24px;
 	height: 100%;
-	background: rgb(255, 253, 208);
+	background: rgb(255, 255, 255);
 	-webkit-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s
@@ -2702,6 +2702,7 @@ header .global-nav__sns a:last-child {
 
 /* Cards */
 .postcard {
+	font-family: "futura_m";
 	flex-wrap: wrap;
 	display: flex;
 	background-color: #18151f;
@@ -2717,6 +2718,7 @@ header .global-nav__sns a:last-child {
   }
   .postcard h1, .postcard .h1 {
 	margin-bottom: 0.5rem;
+	font-family: "futura_m";
 	font-weight: 500;
 	line-height: 1.2;
   }
@@ -2725,6 +2727,7 @@ header .global-nav__sns a:last-child {
   }
   .postcard .postcard__title {
 	margin: 2rem 2rem 2rem 2rem;
+	font-family: "futura_m";
 	color: rgb(255, 255, 255);
 	font-size: 2rem;
   }
@@ -2747,6 +2750,7 @@ header .global-nav__sns a:last-child {
 	transition: width 0.2s ease;
   }
   .postcard .postcard__subtitle{
+	font-family: "futura_m";
 	margin: 2rem 2rem 2rem 2rem;
   }
   .postcard .postcard__text {
@@ -2760,6 +2764,7 @@ header .global-nav__sns a:last-child {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	text-align: justify;
+	font-family: "futura_m";
 	margin: 2rem 2rem 2rem 2rem;
 	height: 100%;
   }
