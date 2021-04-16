@@ -184,6 +184,7 @@ body {
 	-ms-text-size-adjust: 100%;
 	text-size-adjust: 100%;
 	color: #800000;
+	background-color: rgb(255,255,240);
 	text-align: justify;
 	overflow-x: hidden;
 	
@@ -511,7 +512,7 @@ img {
 .btn {
 	display: inline-block;
 	font-size: 1.8rem;
-	color: rgb(0, 0, 0);
+	color: rgb(230, 0, 120);
 	background: rgb(255, 251, 251);
 	line-height: 1;
 	font-weight: bold;
@@ -527,6 +528,7 @@ img {
 @media screen and (max-width:800px) {
 	.btn {
 		font-size: 1.8rem;
+		animation: text-flicker 1s linear infinite;
 		padding: 13px 24px
 	}
 }
@@ -605,6 +607,104 @@ img {
 	}
   }
 
+  .btn_blog {
+	display: inline-block;
+	font-size: 1.8rem;
+	color: rgb(33, 252, 13);
+	background: #2e1b5a;
+	margin: 2rem 2rem 2rem 2rem;
+	line-height: 1;
+	font-weight: bold;
+	padding: 18px 32px;
+	border-radius: 50px;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	animation: text-flicker-blog 5s linear infinite;
+	letter-spacing: 0.1em	
+}
+
+@media screen and (max-width:800px) {
+	.btn_blog {
+		font-size: 1.8rem;
+		animation: text-flicker-blog 5s linear infinite;
+		padding: 13px 24px
+	}
+}
+
+@media screen and (max-width:420px) {
+	.btn_blog {
+		animation: text-flicker-blog 5s linear infinite;
+		font-size: 1.2rem
+	}
+}
+
+.btn_blog:hover {
+	animation: text-flicker-blog 5s linear forwards;
+}
+@keyframes text-flicker-blog {
+	2% { 
+	  color: rgb(33, 252, 13);
+	  text-shadow: 0 0 15px rgb(33, 252, 13);
+	}
+	3% {
+	  color: rgba(33, 252, 13, 0.5);
+	  text-shadow: none;
+	}
+	6% {
+	  color: rgb(33, 252, 13);
+	  text-shadow: 0 0 15px rgb(33, 252, 13);
+	}
+	9% {
+	  color: rgba(33, 252, 13, 0.5);
+	  text-shadow: none;
+	}
+	11% {
+	  color: rgb(33, 252, 13);
+	  text-shadow: 0 0 15px rgb(33, 252, 13);
+	}
+	14% {
+	  color: rgba(33, 252, 13, 0.5);
+	  text-shadow: none;
+	}
+	18% {
+	  color: rgb(33, 252, 13);
+	  text-shadow: 0 0 15px rgb(33, 252, 13);
+	}
+	32% {
+	  color: rgb(33, 252, 13);
+	  text-shadow: 0 0 15px rgb(33, 252, 13);
+	}
+	33% {
+	  color: rgba(33, 252, 13, 0.5);
+	  text-shadow: none;
+	}
+	37% {
+	  color: rgb(33, 252, 13);
+	  text-shadow: 0 0 15px rgb(33, 252, 13);
+	}
+	39% {
+	  color: rgba(33, 252, 13, 0.5);
+	  text-shadow: none;
+	}
+	43% {
+	  color: rgb(33, 252, 13);
+	  text-shadow: 0 0 15px rgb(33, 252, 13);
+	}
+	46% {
+	  color: rgba(33, 252, 13, 0.5);
+	  text-shadow: none;
+	}
+	47% {
+	  color: rgb(33, 252, 13);
+	  text-shadow: 0 0 15px rgb(33, 252, 13);
+	}
+	100% {
+	  color: rgb(33, 252, 13);
+	  text-shadow: 0 0 15px rgb(33, 252, 13);
+	}
+  }
+
 .btn-wrap {
 	margin-top: 3.2rem
 }
@@ -632,7 +732,7 @@ img {
 	-webkit-writing-mode: vertical-rl;
 	-ms-writing-mode: tb-rl;
 	writing-mode: vertical-rl;
-	color: #fff;
+	color: rgb(255, 253, 208);
 	z-index: 100
 }
 
@@ -640,7 +740,7 @@ img {
 	content: "";
 	width: 2px;
 	height: 64px;
-	background: #fff;
+	background: rgb(255, 253, 208);
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -802,14 +902,14 @@ img {
 }
 
 .wrapper {
-	margin-bottom: 3.0rem;
+	margin-bottom: 2.0rem;
 	position: relative;
 	z-index: 200
 }
 
 @media screen and (max-width:420px) {
 	.wrapper {
-		margin-bottom: 3.0rem
+		margin-bottom: 2.0rem
 	}
 }
 
@@ -823,7 +923,7 @@ img {
 	-o-transition: .5s;
 	transition: .5s;
 	overflow: hidden;
-	color: #fff;
+	color: rgb(255, 253, 208);
 	z-index: 300
 }
 
@@ -1239,7 +1339,8 @@ header .global-nav__list li:first-child {
 
 header .global-nav__list a {
 	display: inline-block;
-	color: #fff;
+	color: rgb(255, 255, 255);
+	animation: text-flicker-blog 3s linear forwards;
 	font-size: 12rem;
 	line-height: 1;
 	letter-spacing: 0.1em;
@@ -1270,7 +1371,7 @@ header .global-nav__list a:after {
 	content: "";
 	width: 0;
 	height: 10px;
-	background: #fff;
+	background: rgb(255, 255, 255);
 	position: absolute;
 	left: 0;
 	top: 40%;
@@ -1429,7 +1530,7 @@ header .global-nav__sns a:last-child {
 #fp-nav ul li a {
 	width: 24px;
 	height: 100%;
-	background: #fff;
+	background: rgb(255, 253, 208);
 	-webkit-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s
@@ -1811,7 +1912,7 @@ header .global-nav__sns a:last-child {
 .meta__back {
 	width: 100%;
 	height: 20rem;
-	background: #f2f4f5;
+	background: rgb(240,248,255);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -2402,7 +2503,7 @@ header .global-nav__sns a:last-child {
 	letter-spacing: 0.2em;
 	-webkit-transition: .3s;
 	-o-transition: .3s;
-	animation: text-flicker-footer 1s linear infinite;
+	animation: text-flicker-footer 2s linear infinite;
 	transition: .3s
 }
 
@@ -2604,8 +2705,8 @@ header .global-nav__sns a:last-child {
 	display: flex;
 	background-color: #18151f;
 	box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
-	border-radius: 0px;
-	margin: 4rem 0.5rem 0.5rem 0.5rem;
+	border-radius: 10px;
+	margin: 0.1rem 0.1rem 0.1rem 0.1rem;
 	overflow: hidden;
 	position: relative;
 	color: #ffffff;
@@ -2623,71 +2724,8 @@ header .global-nav__sns a:last-child {
   }
   .postcard .postcard__title {
 	margin: 2rem 2rem 2rem 2rem;
-	color: rgb(33, 252, 13);
-	animation: text-flicker-blog 1s linear infinite;
+	color: rgb(255, 255, 255);
 	font-size: 2rem;
-  }
-  @keyframes text-flicker-blog {
-	2% { 
-	  color: rgb(33, 252, 13);
-	  text-shadow: 0 0 15px rgb(33, 252, 13);
-	}
-	3% {
-	  color: rgba(33, 252, 13, 0.5);
-	  text-shadow: none;
-	}
-	6% {
-	  color: rgb(33, 252, 13);
-	  text-shadow: 0 0 15px rgb(33, 252, 13);
-	}
-	9% {
-	  color: rgba(33, 252, 13, 0.5);
-	  text-shadow: none;
-	}
-	11% {
-	  color: rgb(33, 252, 13);
-	  text-shadow: 0 0 15px rgb(33, 252, 13);
-	}
-	14% {
-	  color: rgba(33, 252, 13, 0.5);
-	  text-shadow: none;
-	}
-	18% {
-	  color: rgb(33, 252, 13);
-	  text-shadow: 0 0 15px rgb(33, 252, 13);
-	}
-	32% {
-	  color: rgb(33, 252, 13);
-	  text-shadow: 0 0 15px rgb(33, 252, 13);
-	}
-	33% {
-	  color: rgba(33, 252, 13, 0.5);
-	  text-shadow: none;
-	}
-	37% {
-	  color: rgb(33, 252, 13);
-	  text-shadow: 0 0 15px rgb(33, 252, 13);
-	}
-	39% {
-	  color: rgba(33, 252, 13, 0.5);
-	  text-shadow: none;
-	}
-	43% {
-	  color: rgb(33, 252, 13);
-	  text-shadow: 0 0 15px rgb(33, 252, 13);
-	}
-	46% {
-	  color: rgba(33, 252, 13, 0.5);
-	  text-shadow: none;
-	}
-	47% {
-	  color: rgb(33, 252, 13);
-	  text-shadow: 0 0 15px rgb(33, 252, 13);
-	}
-	100% {
-	  color: rgb(33, 252, 13);
-	  text-shadow: 0 0 15px rgb(33, 252, 13);
-	}
   }
   .postcard .postcard__img {
 	max-height: 180px;
