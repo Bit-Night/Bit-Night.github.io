@@ -2398,12 +2398,76 @@ header .global-nav__sns a:last-child {
 	display: block;
 	font-size: 2.8rem;
 	line-height: 1.3;
-	color: #fff;
+	color: rgb(57, 255, 20);
 	letter-spacing: 0.2em;
 	-webkit-transition: .3s;
 	-o-transition: .3s;
+	animation: text-flicker-footer 1s linear infinite;
 	transition: .3s
 }
+
+@keyframes text-flicker-footer {
+	2% { 
+	  color: rgb(57, 255, 20);
+	  text-shadow: 0 0 15px rgb(57, 255, 20);
+	}
+	3% {
+	  color: rgba(57, 255, 20, 0.5);
+	  text-shadow: none;
+	}
+	6% {
+	  color: rgb(57, 255, 20);
+	  text-shadow: 0 0 15px rgb(57, 255, 20);
+	}
+	9% {
+	  color: rgba(57, 255, 20, 0.5);
+	  text-shadow: none;
+	}
+	11% {
+	  color: rgb(57, 255, 20);
+	  text-shadow: 0 0 15px rgb(57, 255, 20);
+	}
+	14% {
+	  color: rgba(57, 255, 20, 0.5);
+	  text-shadow: none;
+	}
+	18% {
+	  color: rgb(57, 255, 20);
+	  text-shadow: 0 0 15px rgb(57, 255, 20);
+	}
+	32% {
+	  color: rgb(57, 255, 20);
+	  text-shadow: 0 0 15px rgb(57, 255, 20);
+	}
+	33% {
+	  color: rgba(57, 255, 20, 0.5);
+	  text-shadow: none;
+	}
+	37% {
+	  color: rgb(57, 255, 20);
+	  text-shadow: 0 0 15px rgb(57, 255, 20);
+	}
+	39% {
+	  color: rgba(57, 255, 20, 0.5);
+	  text-shadow: none;
+	}
+	43% {
+	  color: rgb(57, 255, 20);
+	  text-shadow: 0 0 15px rgb(57, 255, 20);
+	}
+	46% {
+	  color: rgba(57, 255, 20, 0.5);
+	  text-shadow: none;
+	}
+	47% {
+	  color: rgb(57, 255, 20);
+	  text-shadow: 0 0 15px rgb(57, 255, 20);
+	}
+	100% {
+	  color: rgb(57, 255, 20);
+	  text-shadow: 0 0 15px rgb(57, 255, 20);
+	}
+  }
 
 @media screen and (max-width:420px) {
 	.footer a {
@@ -2412,7 +2476,7 @@ header .global-nav__sns a:last-child {
 }
 
 .footer a:first-child {
-	margin-bottom: 2.4rem
+		margin-bottom: 2.4rem
 }
 
 @media screen and (max-width:420px) {
@@ -2559,7 +2623,71 @@ header .global-nav__sns a:last-child {
   }
   .postcard .postcard__title {
 	margin: 2rem 2rem 2rem 2rem;
-	font-size: 1.75rem;
+	color: rgb(15, 240, 252);
+	animation: text-flicker-blog 1s linear infinite;
+	font-size: 2rem;
+  }
+  @keyframes text-flicker-blog {
+	2% { 
+	  color: rgb(15, 240, 252);
+	  text-shadow: 0 0 15px rgb(15, 240, 252);
+	}
+	3% {
+	  color: rgba(15, 240, 252, 0.5);
+	  text-shadow: none;
+	}
+	6% {
+	  color: rgb(15, 240, 252);
+	  text-shadow: 0 0 15px rgb(15, 240, 252);
+	}
+	9% {
+	  color: rgba(15, 240, 252, 0.5);
+	  text-shadow: none;
+	}
+	11% {
+	  color: rgb(15, 240, 252);
+	  text-shadow: 0 0 15px rgb(15, 240, 252);
+	}
+	14% {
+	  color: rgba(15, 240, 252, 0.5);
+	  text-shadow: none;
+	}
+	18% {
+	  color: rgb(15, 240, 252);
+	  text-shadow: 0 0 15px rgb(15, 240, 252);
+	}
+	32% {
+	  color: rgb(15, 240, 252);
+	  text-shadow: 0 0 15px rgb(15, 240, 252);
+	}
+	33% {
+	  color: rgba(15, 240, 252, 0.5);
+	  text-shadow: none;
+	}
+	37% {
+	  color: rgb(15, 240, 252);
+	  text-shadow: 0 0 15px rgb(15, 240, 252);
+	}
+	39% {
+	  color: rgba(15, 240, 252, 0.5);
+	  text-shadow: none;
+	}
+	43% {
+	  color: rgb(15, 240, 252);
+	  text-shadow: 0 0 15px rgb(15, 240, 252);
+	}
+	46% {
+	  color: rgba(15, 240, 252, 0.5);
+	  text-shadow: none;
+	}
+	47% {
+	  color: rgb(15, 240, 252);
+	  text-shadow: 0 0 15px rgb(15, 240, 252);
+	}
+	100% {
+	  color: rgb(15, 240, 252);
+	  text-shadow: 0 0 15px rgb(15, 240, 252);
+	}
   }
   .postcard .postcard__img {
 	max-height: 180px;
